@@ -24,5 +24,6 @@ RUN git clone https://github.com/braillerap/MarlinBraille2.git Marlin\
 #  && git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
 
 COPY build-marlin.sh .
+RUN pwd
 RUN ls -l .
 CMD ["bash", "/home/platformio/build-marlin.sh"]
