@@ -26,4 +26,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: false
-          tags: frealmyr/docker-marlin-build:latest
+          tags: crocsg/docker-marlin-build:latest
