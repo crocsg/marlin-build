@@ -36,7 +36,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: frealmyr/marlin-build:latest
+          tags: crocsg/marlin-build:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
