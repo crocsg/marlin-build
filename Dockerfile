@@ -12,7 +12,7 @@ ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
 
 # Clone MarlinFirmware repository, checkout latest release tag
 WORKDIR /home/platformio
-RUN git clone https://github.com/braillerap/MarlinBraille2.git \
+RUN git clone https://github.com/braillerap/MarlinBraille2.git Marlin\
   && cd Marlin/ \
   && git checkout BrailleRAP
 #  && git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
