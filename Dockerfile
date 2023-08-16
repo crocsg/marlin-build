@@ -11,6 +11,7 @@ USER docker:docker
 #RUN python3 -c "$(curl -fsSL https://raw.githubusercontent.com/platformio/platformio/master/scripts/get-platformio.py)"
 WORKDIR /tmp
 RUN curl -fsSL -o /tmp/get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
+RUN ls -l /tmp
 RUN python3 -m /tmp/get-platformio.py
 ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
 ENV PATH=$PATH:$HOME/.local/bin
