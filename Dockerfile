@@ -13,7 +13,7 @@ WORKDIR /tmp
 RUN curl -fsSL -o /tmp/get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
 RUN ls -l /tmp
 RUN chmod +x /tmp/get-platformio.py
-RUN python3 -m /tmp/get-platformio.py
+RUN python3 /tmp/get-platformio.py
 ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
 ENV PATH=$PATH:$HOME/.local/bin
 RUN ln -s ~/.platformio/penv/bin/platformio ~/.local/bin/platformio
