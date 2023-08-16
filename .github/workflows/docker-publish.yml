@@ -38,7 +38,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: crocsg/marlin-build:latest
+          tags: sgngodin/braillerap-marlin-build:tagname
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
