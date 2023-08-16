@@ -14,7 +14,8 @@ ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
 WORKDIR /home/platformio
 RUN git clone https://github.com/braillerap/MarlinBraille2.git \
   && cd Marlin/ \
+  && git checkout BrailleRAP
 #  && git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
-   && git checkout BrailleRAP
+
 COPY build-marlin.sh .
 CMD ["bash", "/home/platformio/build-marlin.sh"]
