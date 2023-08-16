@@ -15,6 +15,8 @@ RUN ls -l /tmp
 RUN chmod +x /tmp/get-platformio.py
 RUN python3 /tmp/get-platformio.py
 ENV PATH=/home/platformio/.platformio/penv/bin/platformio:$PATH
+ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
+
 
 # Clone MarlinFirmware repository, checkout latest release tag
 WORKDIR /home/platformio
