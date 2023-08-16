@@ -1,6 +1,10 @@
-# Build Marlin firmware using docker
+# Build Marlin firmware for BrailleRAP using docker
 
-This docker image contains `platformio-core` and a bash script, for conveniently compiling Marlin firmware with your own configuration.
+This repository is based on https://github.com/frealmyr/marlin-build
+The objective is to build Marlin firmware for multiple board (MKS 1.4 MKS GEN L and MKS tinybee) with minimal modification in Marlin source code so we can provide pull request to marlin project.
+
+
+This docker image contains `platformio-core` and a bash script, for conveniently compiling Marlin firmware with BrailleRAP configuration.
 
 ## Compiling firmware
 
