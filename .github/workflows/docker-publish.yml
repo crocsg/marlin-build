@@ -11,6 +11,8 @@ on:
       - 'docker-compose.yml'
   schedule:
     - cron: 0 0 1 * * # First day of month
+  
+  workflow_dispatch:
 
 jobs:
   push_to_registry:
