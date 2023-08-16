@@ -1,4 +1,4 @@
-FROM python:3-slim-buster
+FROM python:3-slim-bookworm
 
 RUN apt update && apt install -y curl build-essential g++ git
 
