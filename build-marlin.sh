@@ -90,6 +90,7 @@ if [[ ${success} -eq 0 ]]; then
     printf "\nValidating firmware checksum.."
     if md5sum -c $OUTPUT_DIR/$FIRMWARE_NAME.md5;
     then
+      printf "\noutput docker dir $OUTPUT_DIR \n"
       ls -l $OUTPUT_DIR
       printf "\e[0mMD5 Checksum Validation: \e[1;32mSucceeded\n"
       echo ""
