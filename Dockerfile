@@ -14,8 +14,8 @@ RUN curl -fsSL -o /tmp/get-platformio.py https://raw.githubusercontent.com/platf
 RUN ls -l /tmp
 RUN chmod +x /tmp/get-platformio.py
 RUN python3 /tmp/get-platformio.py
-ENV PATH=/home/platformio/.platformio/penv/bin/platformio:$PATH
-ENV PATH=/home/platformio/.platformio/penv/bin:$PATH
+ENV PATH=/root/.platformio/penv/bin/platformio:$PATH
+ENV PATH=/root/.platformio/penv/bin:$PATH
 
 
 # Clone MarlinFirmware repository, checkout latest release tag
