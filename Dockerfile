@@ -4,7 +4,7 @@ RUN apt update && apt install -y curl build-essential g++ git
 
 # Create a non-root user and group
 RUN useradd -s /bin/sh -d /home/platformio -m docker
-USER docker:docker
+USER root:root
 
 # Install PlatformIO Core
 #RUN python3 -c "$(curl -fsSL https://github.com/platformio/platformio-core-installer/blob/master/get-platformio.py)"
