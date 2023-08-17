@@ -80,16 +80,17 @@ if [[ ${success} -eq 0 ]]; then
   cd /home/platformio/Marlin/.pio/build/$BOARD
   printf "\noutput\n"
   ls -l .
-  
+
   if [ $(find . -name "*.${FW_EXTENSION}") ];
   then
     FIRMWARE_NAME=$(find . -name "*.${FW_EXTENSION}" -type f -exec basename {} .${FW_EXTENSION} ';')
     md5sum $FIRMWARE_NAME.$FW_EXTENSION > $OUTPUT_DIR/$FIRMWARE_NAME.md5
-    cp $FIRMWARE_NAME.$FW_EXTENSION $OUTPUT_DIR
+    cp $FIRMWARE_NAME.$FW_EXTENSION $OUTPUT_DIR/$FIRMWARE_NAME-$BOARD.$FW_EXTENSION
 
     printf "\nValidating firmware checksum.."
     if md5sum -c $OUTPUT_DIR/$FIRMWARE_NAME.md5;
     then
+      ls -l $OUTPUT_DIR
       printf "\e[0mMD5 Checksum Validation: \e[1;32mSucceeded\n"
       echo ""
       echo "  (\.   \      ,/)"
