@@ -80,6 +80,7 @@ if [[ ${success} -eq 0 ]]; then
   cd /home/platformio/Marlin/.pio/build/$BOARD
   printf "\noutput\n"
   ls -l .
+  pwd
 
   if [ $(find . -name "*.${FW_EXTENSION}") ];
   then
