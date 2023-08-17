@@ -67,7 +67,9 @@ else
 fi
 
 if [[ ${success} -eq 0 ]]; then
+  printf "\nlisting home"
   ls -l /home/platformio
+  printf "\nlisting home/build"
   ls -l /home/platformio/build
   OUTPUT_DIR=/home/platformio/build/$BOARD
   mkdir -p $OUTPUT_DIR
