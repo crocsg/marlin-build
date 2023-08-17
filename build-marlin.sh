@@ -84,7 +84,7 @@ if [[ ${success} -eq 0 ]]; then
 
   if [ $(find . -name "*.${FW_EXTENSION}") ];
   then
-    FIRMWARE_NAME=$(find . -name "*.${FW_EXTENSION}" -type f -exec basename {} .${FW_EXTENSION} ';')
+    FIRMWARE_NAME=$(find . -name "firmware.${FW_EXTENSION}" -type f -exec basename {} .${FW_EXTENSION} ';')
     md5sum $FIRMWARE_NAME.$FW_EXTENSION > $OUTPUT_DIR/$FIRMWARE_NAME.md5
     cp $FIRMWARE_NAME.$FW_EXTENSION $OUTPUT_DIR/$FIRMWARE_NAME-$BOARD.$FW_EXTENSION
 
