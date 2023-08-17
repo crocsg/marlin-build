@@ -78,7 +78,9 @@ if [[ ${success} -eq 0 ]]; then
 
   printf "\nCopying compiled firmware to output folder..\n"
   cd /home/platformio/Marlin/.pio/build/$BOARD
-
+  printf "\noutput\n"
+  ls -l .
+  
   if [ $(find . -name "*.${FW_EXTENSION}") ];
   then
     FIRMWARE_NAME=$(find . -name "*.${FW_EXTENSION}" -type f -exec basename {} .${FW_EXTENSION} ';')
