@@ -68,6 +68,7 @@ fi
 
 if [[ ${success} -eq 0 ]]; then
   ls -l /home/platformio
+  ls -l /home/platformio/build
   OUTPUT_DIR=/home/platformio/build/$BOARD
   mkdir -p $OUTPUT_DIR
 
