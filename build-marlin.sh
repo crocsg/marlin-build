@@ -95,14 +95,21 @@ if [[ ${success} -eq 0 ]]; then
       printf "\noutput docker dir $OUTPUT_DIR \n"
       ls -l $OUTPUT_DIR
       printf "\e[0mMD5 Checksum Validation: \e[1;32mSucceeded\n"
-      echo ""
-      echo "  (\.   \      ,/)"
-      echo "   \(   |\     )/    Yer done!"
-      echo "   //\  | \   /\\"
-      echo "  (/ /\_#oo#_/\ \)   Happy 3D-Printing!"
-      echo "   \/\  ####  /\/"
-      echo "        '##'"
-      echo ""
+      echo "      "
+      echo "  ______   __    __ "
+      echo " /      \ |  \  /  \"
+      echo "|  $$$$$$\| $$ /  $$"
+      echo "| $$  | $$| $$/  $$ "
+      echo "| $$  | $$| $$  $$  "
+      echo "| $$  | $$| $$$$$\  "
+      echo "| $$__/ $$| $$ \$$\ "
+      echo "\$$    $$| $$  \$$\"
+      echo "  \$$$$$$  \$$   \$$"
+                    
+                    
+                    
+
+      
     else
       printf "\e[0mMD5 Checksum Validation: \e[1;31mFailed\n"
       printf "\n\e[1;31mBuild failed! \e[0mCheck the output above for errors\n"
