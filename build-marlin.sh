@@ -95,17 +95,17 @@ if [[ ${success} -eq 0 ]]; then
       printf "\noutput docker dir $OUTPUT_DIR \n"
       ls -l $OUTPUT_DIR
       printf "\e[0mMD5 Checksum Validation: \e[1;32mSucceeded\n"
-      echo "      "
-      echo "  ______   __    __ "
-      echo " /      \ |  \  /  \"
-      echo "|  $$$$$$\| $$ /  $$"
-      echo "| $$  | $$| $$/  $$ "
-      echo "| $$  | $$| $$  $$  "
-      echo "| $$  | $$| $$$$$\  "
-      echo "| $$__/ $$| $$ \$$\ "
-      echo "\$$    $$| $$  \$$\"
-      echo "  \$$$$$$  \$$   \$$"
-                    
+      printf "\e[0mM      \n"
+      printf "  ______   __    __ \n"
+      printf " /      \ |  \  /  \\\n"
+      printf "|  $$$$$$\| $$ /  $$\n"
+      printf "| $$  | $$| $$/  $$ \n"
+      printf "| $$  | $$| $$  $$  \n"
+      printf "| $$  | $$| $$$$$\\  \n"
+      printf "| $$__/ $$| $$ \\$$\\ \n"
+      printf "\\$$    $$| $$  \\$$\\\n"
+      printf "  \\$$$$$$  \\$$   \\$$\n"
+      printf "\e[1;32\n"                    
                     
                     
 
