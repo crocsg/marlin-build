@@ -96,20 +96,14 @@ if [[ ${success} -eq 0 ]]; then
       ls -l $OUTPUT_DIR
       printf "\e[0mMD5 Checksum Validation: \e[1;32mSucceeded\n"
       printf "\e[0mM      \n"
-      printf "  ______   __    __ \n"
-      printf " /      \ |  \  /  \\\n"
-      printf "|  $$$$$$\| $$ /  $$\n"
-      printf "| $$  | $$| $$/  $$ \n"
-      printf "| $$  | $$| $$  $$  \n"
-      printf "| $$  | $$| $$$$$\\  \n"
-      printf "| $$__/ $$| $$ \\$$\\ \n"
-      printf "\\$$    $$| $$  \\$$\\\n"
-      printf "  \\$$$$$$  \\$$   \\$$\n"
+      printf "####### #    # \n"
+      printf "#     # #   #  \n"
+      printf "#     # #  #   \n"
+      printf "#     # ###    \n"
+      printf "#     # #  #   \n"
+      printf "#     # #   #  \n"
+      printf "####### #    # \n"
       printf "\e[1;32\n"                    
-                    
-                    
-
-      
     else
       printf "\e[0mMD5 Checksum Validation: \e[1;31mFailed\n"
       printf "\n\e[1;31mBuild failed! \e[0mCheck the output above for errors\n"
