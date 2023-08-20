@@ -28,6 +28,7 @@ elif [[ $USE_BRANCH ]]; then
   cd Marlin/
   git fetch origin
   git checkout $USE_BRANCH
+  git pull
   printf "\nYou are now using the latest commit in branch:\e[01;33m $(git branch | sed -n '/\* /s///p')\e[0m\n\n"
   cd ..
 else
