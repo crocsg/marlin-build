@@ -84,8 +84,10 @@ if [[ ${success} -eq 0 ]]; then
   pwd
 
   if [ $(find . -name "partitions.${FW_EXTENSION}") ];
+  then
     cp partitions.$FW_EXTENSION $OUTPUT_DIR/partitions-$BOARD.$FW_EXTENSION
-    
+  fi  
+  
   if [ $(find . -name "firmware.${FW_EXTENSION}") ];
   then
     #FIRMWARE_NAME=$(find . -name "*.${FW_EXTENSION}" -type f -exec basename {} .${FW_EXTENSION} ';')
