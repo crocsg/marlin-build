@@ -9,8 +9,8 @@ on:
       - '.gitignore'
       - 'examples/**'
       - 'docker-compose.yml'
-  schedule:
-    - cron: 0 0 1 * * # First day of month
+  #schedule:
+  #  - cron: 0 0 1 * * # First day of month
   
   workflow_dispatch:
 
